@@ -12,6 +12,7 @@ from langchain_groq import ChatGroq
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.retrievers import BM25Retriever
+from langchain_core.documents import Document
 from langchain_classic.retrievers.ensemble import EnsembleRetriever
 from langchain_classic.retrievers.multi_query import MultiQueryRetriever
 from langchain_classic.retrievers.document_compressors import CrossEncoderReranker
@@ -23,6 +24,7 @@ from langchain_community.document_loaders import PyPDFLoader, TextLoader, Docx2t
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from router import route_query, should_fallback_to_web
+from web_ingest import build_documents_from_urls
 
 load_dotenv()
 
@@ -59,6 +61,7 @@ llm = ChatGroq(
 
 reranker_model = HuggingFaceCrossEncoder(model_name="BAAI/bge-reranker-base")
 compressor = CrossEncoderReranker(model=reranker_model, top_n=5)
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=150)
 
 # Global retriever state — rebuilt after uploads
 base_retriever = db.as_retriever(search_kwargs={"k": 5})
@@ -175,6 +178,55 @@ class ChatRequest(BaseModel):
 class UploadRequest(BaseModel):
     name: str
     contentBase64: str
+
+
+class WebIngestRequest(BaseModel):
+    urls: list[str]
+    maxPages: int = 10
+    allowedDomains: Optional[list[str]] = None
+
+
+@app.post("/ingest-web")
+def ingest_web(req: WebIngestRequest):
+    try:
+        if not req.urls:
+            raise HTTPException(status_code=400, detail="Provide at least one URL.")
+
+        scraped_pages = build_documents_from_urls(
+            req.urls,
+            max_pages=req.maxPages,
+            allowed_domains=req.allowedDomains,
+        )
+        if not scraped_pages:
+            return {"status": "success", "pages_scraped": 0, "chunks_added": 0, "message": "No web content found."}
+
+        web_documents = []
+        for page in scraped_pages:
+            doc = Document(
+                page_content=page["content"],
+                metadata={
+                    "source": page["url"],
+                    "url": page["url"],
+                    "filename": page["url"],
+                    "type": "web",
+                },
+            )
+            web_documents.extend(text_splitter.split_documents([doc]))
+
+        valid_chunks = [chunk for chunk in web_documents if chunk.page_content.strip()]
+        if valid_chunks:
+            db.add_documents(valid_chunks)
+            rebuild_retrievers()
+
+        return {
+            "status": "success",
+            "pages_scraped": len(scraped_pages),
+            "chunks_added": len(valid_chunks),
+            "urls": req.urls,
+        }
+    except Exception as e:
+        print(f"Web ingest error: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 @app.post("/upload")
