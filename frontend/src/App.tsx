@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { api } from './services/api';
 import { ChatSession, KnowledgeFile, Message, User, UserSettings } from './types';
 import Sidebar from './components/Sidebar';
 import ChatPage from './pages/Chat';
 import KnowledgeBasePage from './pages/KnowledgeBase';
 import SettingsPage from './pages/Settings';
+import InsightsPage from './pages/InsightsPage';
 import Loader from './components/Loader';
 import { Menu, Sparkles, BookOpen, User as UserIcon, LogIn, HelpCircle } from 'lucide-react';
 
@@ -24,7 +25,7 @@ export default function App() {
     fontSize: 'small'
   });
 
-  const [currentPage, setCurrentPage] = useState<'chat' | 'knowledge' | 'settings'>('chat');
+  const [currentPage, setCurrentPage] = useState<'chat' | 'knowledge' | 'settings' | 'insights'>('chat');
   const [isLoadingMessages, setIsLoadingMessages] = useState(false);
   const [isSendingMessage, setIsSendingMessage] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -80,9 +81,16 @@ export default function App() {
     loadWorkspaceData();
   }, [user]);
 
+  const ignoreNextSessionLoadRef = useRef<boolean>(false);
+
   // Load messages whenever selected session ID changes
   useEffect(() => {
     if (!user || !selectedSessionId) return;
+
+    if (ignoreNextSessionLoadRef.current) {
+      ignoreNextSessionLoadRef.current = false;
+      return;
+    }
 
     const loadMessagesOfSession = async () => {
       try {
@@ -319,8 +327,12 @@ export default function App() {
       // If we had no session selected, select the top one
       const match = currentSessions.find(s => s.title === chatResponse.sessionTitle);
       if (match) {
-        setSelectedSessionId(match.id);
+        if (selectedSessionId !== match.id) {
+          ignoreNextSessionLoadRef.current = true;
+          setSelectedSessionId(match.id);
+        }
       } else if (currentSessions.length > 0 && !selectedSessionId) {
+        ignoreNextSessionLoadRef.current = true;
         setSelectedSessionId(currentSessions[0].id);
       }
     } catch (err) {
@@ -459,6 +471,10 @@ export default function App() {
                   currentSessionMessages={messages}
                   fontSize={settings.fontSize}
                 />
+              )}
+
+              {currentPage === 'insights' && (
+                <InsightsPage fontSize={settings.fontSize} />
               )}
             </>
           )}

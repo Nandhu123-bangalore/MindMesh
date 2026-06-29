@@ -1,0 +1,1345 @@
+{
+  "passwordsDb": {
+    "alex": "password123",
+    "nandhitha": "password123",
+    "researcher": "password123"
+  },
+  "db": {
+    "alex": {
+      "username": "alex",
+      "files": [
+        {
+          "id": "1",
+          "name": "attention_is_all_you_need.pdf",
+          "size": "2.4 MB",
+          "type": "PDF",
+          "uploadDate": "Oct 24, 2023",
+          "status": "Indexed"
+        },
+        {
+          "id": "2",
+          "name": "dataset_documentation.docx",
+          "size": "156 KB",
+          "type": "DOCX",
+          "uploadDate": "Nov 02, 2023",
+          "status": "Indexed"
+        },
+        {
+          "id": "3",
+          "name": "hyperparameter_tuning_log.txt",
+          "size": "45 KB",
+          "type": "TXT",
+          "uploadDate": "Nov 15, 2023",
+          "status": "Indexed"
+        }
+      ],
+      "sessions": [
+        {
+          "id": "s1",
+          "title": "General Workspace Q&A",
+          "createdAt": "2026-06-22T09:42:00Z",
+          "messages": [
+            {
+              "id": "m2",
+              "role": "assistant",
+              "text": "Hello! What are we talking about today?",
+              "timestamp": "10:43 AM",
+              "suggestions": [
+                "What is dynamic programming?",
+                "Explain SQL joins with examples"
+              ]
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "activeLlm": "gemini",
+        "activeConnections": [
+          "1",
+          "2"
+        ],
+        "fontSize": "small"
+      }
+    },
+    "nandhitha": {
+      "username": "nandhitha",
+      "files": [
+        {
+          "id": "1782472564840",
+          "name": "Mastering_FastAPI_with_Python.pdf",
+          "size": "0.9 MB",
+          "type": "PDF",
+          "uploadDate": "Jun 26, 2026",
+          "status": "Indexed"
+        },
+        {
+          "id": "1782472579556",
+          "name": "Mastering_FastAPI_with_Python.pdf",
+          "size": "0.9 MB",
+          "type": "PDF",
+          "uploadDate": "Jun 26, 2026",
+          "status": "Indexed"
+        },
+        {
+          "id": "1782474321378",
+          "name": "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf",
+          "size": "14.5 MB",
+          "type": "PDF",
+          "uploadDate": "Jun 26, 2026",
+          "status": "Indexed"
+        },
+        {
+          "id": "1782629066920",
+          "name": "Group2-Presentation-cf8028bc58193a5e6e6d7b05709ef1a9.pdf",
+          "size": "3.8 MB",
+          "type": "PDF",
+          "uploadDate": "Jun 28, 2026",
+          "status": "Indexed"
+        },
+        {
+          "id": "1782707816772",
+          "name": "NIPS-2017-attention-is-all-you-need-Paper.pdf",
+          "size": "0.5 MB",
+          "type": "PDF",
+          "uploadDate": "Jun 29, 2026",
+          "status": "Indexed"
+        }
+      ],
+      "sessions": [
+        {
+          "id": "session-1782469965946",
+          "title": "Explain transformer archi...",
+          "createdAt": "2026-06-26T10:32:45.946Z",
+          "messages": [
+            {
+              "id": "init-m-1782469965946",
+              "role": "assistant",
+              "text": "Hello! What are we talking about today?",
+              "timestamp": "04:02 PM",
+              "suggestions": [
+                "What is dynamic programming?",
+                "Explain SQL joins with examples"
+              ]
+            },
+            {
+              "id": "umsg-1782469968789",
+              "role": "user",
+              "text": "Explain transformer architecture",
+              "timestamp": "04:02 PM"
+            },
+            {
+              "id": "amsg-1782469970330",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:02 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "mindmesh_test_doc.txt",
+                "simple_test.txt",
+                "simple_test.txt"
+              ],
+              "suggestions": [
+                "Further explain: Explain transformer architectu",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782469973685",
+              "role": "user",
+              "text": "What is the difference between concurrency and parallelism?",
+              "timestamp": "04:02 PM"
+            },
+            {
+              "id": "amsg-1782469975222",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:02 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query is about established AI/ML concepts, specifically concurrency and parallelism, which are stable topics answerable from a knowledge base.",
+              "sources": [
+                "mindmesh_test_doc.txt",
+                "simple_test.txt"
+              ],
+              "suggestions": [
+                "Further explain: What is the difference between",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782469991370",
+              "role": "user",
+              "text": "How do embeddings work?",
+              "timestamp": "04:03 PM"
+            },
+            {
+              "id": "amsg-1782469994114",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:03 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "mindmesh_test_doc.txt",
+                "simple_test.txt",
+                "simple_test.txt"
+              ],
+              "suggestions": [
+                "Further explain: How do embeddings work?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782470099655",
+              "role": "user",
+              "text": "what is this pdf about",
+              "timestamp": "04:04 PM"
+            },
+            {
+              "id": "amsg-1782470111212",
+              "role": "assistant",
+              "text": "• Definition: This PDF is about neural networks, a computational model inspired by biological neurons.\n• How it works: \n  * It consists of layers of interconnected nodes (neurons) that process information.\n  * Key components include:\n    + Input Layer: Receives raw data (features)\n    + Hidden Layers: Transform data through weighted connections and activation functions\n    + Output Layer: Produces the final prediction or classification\n  * Activation functions are used, such as ReLU, Sigmoid, and Tanh, to introduce non-linearity into the model.\n  * Backpropagation is mentioned, implying a method for training the network.\n• Example: No concrete example is provided in the context.\n• Key Takeaway: This PDF provides an overview of fundamental concepts in neural networks, covering key components, activation functions, and backpropagation.",
+              "timestamp": "04:05 PM",
+              "route": "DOCUMENT",
+              "routingReason": "The query specifically asks about the content of a user's uploaded document, which is a PDF.",
+              "sources": [
+                "simple_test.txt",
+                "simple_test.txt",
+                "mindmesh_test_doc.txt"
+              ],
+              "suggestions": [
+                "Further explain: what is this pdf about",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782470670908",
+              "role": "user",
+              "text": "What is RAG?",
+              "timestamp": "04:14 PM"
+            },
+            {
+              "id": "amsg-1782470671678",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:14 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: What is RAG?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782470674629",
+              "role": "user",
+              "text": "Difference between LoRA and QLoRA",
+              "timestamp": "04:14 PM"
+            },
+            {
+              "id": "amsg-1782470675878",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:14 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query asks about the difference between two established AI/ML concepts, LoRA and QLoRA, which can be answered from a stable knowledge base without needing current or recent information.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: Difference between LoRA and QL",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782470786632",
+              "role": "user",
+              "text": "Explain linear regression vs logistic regression",
+              "timestamp": "04:16 PM"
+            },
+            {
+              "id": "amsg-1782470788238",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:16 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: Explain linear regression vs l",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782470856313",
+              "role": "user",
+              "text": "what is rag?",
+              "timestamp": "04:17 PM"
+            },
+            {
+              "id": "amsg-1782470857484",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:17 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: what is rag?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782471334145",
+              "role": "user",
+              "text": "Explain linear regression vs logistic regression",
+              "timestamp": "04:25 PM"
+            },
+            {
+              "id": "amsg-1782471336100",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:25 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: Explain linear regression vs l",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782471386972",
+              "role": "user",
+              "text": "Explain attention mechanism",
+              "timestamp": "04:26 PM"
+            },
+            {
+              "id": "amsg-1782471389728",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:26 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: Explain attention mechanism",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782472484106",
+              "role": "user",
+              "text": "What is a vector database?",
+              "timestamp": "04:44 PM"
+            },
+            {
+              "id": "amsg-1782472486369",
+              "role": "assistant",
+              "text": "• Definition: A vector database (VDBMS) is a type of database designed to store and manage vector data, which are dense, opaque representations of complex data such as text, images, and sounds.\n• How it works: \n  * Data is converted into embedding vectors using a machine learning model\n  * Vectors are stored in a specialized database\n  * Queries are embedded as vectors and the database finds similar vectors\n  * Key features include nearest neighbor search, simple filtering, and eventual consistency\n• Example: No specific example is provided in the context, but the process involves converting data into vectors, storing them, and querying the database to find similar vectors.\n• Key Takeaway: A vector database is a specialized database that stores and manages vector data, enabling fast k-nearest neighbor queries and simple filtering, but lacks support for complex queries and strong consistency.",
+              "timestamp": "04:44 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "1_-_Intro_What_is_a_Vector_DB.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is a vector database?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782472495457",
+              "role": "user",
+              "text": "Explain attention mechanism",
+              "timestamp": "04:44 PM"
+            },
+            {
+              "id": "amsg-1782472497914",
+              "role": "assistant",
+              "text": "• Definition: The attention mechanism is a technique used in sequence modeling and transduction models to allow the model to focus on specific parts of the input sequence when generating the output sequence.\n• How it works: \n  * The attention mechanism computes a convex sum over the hidden states of the input sequence, where the weights of the sum represent the amount of attention paid to each part of the input sequence.\n  * The model can think of this sum as the attention mechanism, where more weight on a particular hidden state means the model is paying more attention to the token inputted at that time step.\n  * The attention mechanism can be used in different ways, such as in \"encoder-decoder attention\" layers, where the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder.\n  * Multi-Head Attention is used, which consists of multiple parallel attention layers, or heads, to counteract the effect of reduced effective resolution due to averaging attention-weighted positions.\n• Example: The English sentence to be translated is on the top row, and the resulting French translation is on the first column. The lighter a square is, the more attention the decoder paid to that particular column when decoding that row element.\n• Key Takeaway: The attention mechanism allows the model to focus on specific parts of the input sequence when generating the output sequence, enabling the modeling of dependencies without regard to their distance in the sequence.",
+              "timestamp": "04:44 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "deep-learning-material-dept-ece-ase-blr-1 21.54.41.pdf",
+                "NIPS-2017-attention-is-all-you-need-Paper.pdf"
+              ],
+              "suggestions": [
+                "Further explain: Explain attention mechanism",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782472511199",
+              "role": "user",
+              "text": "How does k-means clustering work?",
+              "timestamp": "04:45 PM"
+            },
+            {
+              "id": "amsg-1782472513302",
+              "role": "assistant",
+              "text": "• Definition: K-Means Clustering is an unsupervised learning algorithm that groups an unlabeled dataset into different clusters, where K defines the number of pre-defined clusters.\n• How it works: \n  * Step-1: Select the number K to decide the number of clusters.\n  * Step-2: Select random K points or centroids.\n  * Step-3: Assign each data point to their closest centroid, which will form the predefined K clusters.\n  * Step-4: Calculate the variance and place a new centroid of each cluster.\n  Key technical concepts:\n    + Centroid-based algorithm\n    + Iterative process to minimize the sum of distances between data points and their corresponding clusters\n• Example: Not explicitly provided in the context, but the algorithm can be illustrated with a simple dataset where K=2 or K=3 to demonstrate how it divides the data into clusters.\n• Key Takeaway: K-Means Clustering is an iterative, centroid-based algorithm that assigns data points to the closest cluster to minimize the sum of distances, requiring the pre-definition of the number of clusters (K).",
+              "timestamp": "04:45 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "AI & ML DIGITAL NOTES.pdf"
+              ],
+              "suggestions": [
+                "Further explain: How does k-means clustering wo",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782472515467",
+              "role": "user",
+              "text": "What is fine-tuning",
+              "timestamp": "04:45 PM"
+            },
+            {
+              "id": "amsg-1782472517839",
+              "role": "assistant",
+              "text": "• Definition: Fine-tuning is the process of updating a pre-trained model's parameters to adapt to a specific downstream task.\n• How it works: \n  • It starts with a pre-trained base model and updates its parameters to fit the new task.\n  • The goal is to adjust the model's weights to minimize the difference between its predictions and the actual outcomes for the target task.\n  • However, fine-tuning all parameters can be expensive and require large GPU memory.\n• Example: Fine-tuning a large language model like GPT-3 for a specific task, such as question-answering (Q&A) on the SQuAD V2 dataset, can improve its performance from 69.8% to 88.4% (F1 score).\n• Key Takeaway: Fine-tuning is an essential step in adapting pre-trained models to specific tasks, but it can be computationally expensive, prompting the need for parameter-efficient fine-tuning methods.",
+              "timestamp": "04:45 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Group2-Presentation-cf8028bc58193a5e6e6d7b05709ef1a9.pdf",
+                "17-LLM-finetuning.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is fine-tuning",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782472577858",
+              "role": "user",
+              "text": "what is fast api?",
+              "timestamp": "04:46 PM"
+            },
+            {
+              "id": "amsg-1782472581735",
+              "role": "assistant",
+              "text": "• Definition: The retrieved context does not contain a definition of \"Fast API\".\n• How it works: The retrieved context does not explain how Fast API works.\n• Example: There is no example of Fast API in the context.\n• Key Takeaway: I don't know based on my knowledge base.",
+              "timestamp": "04:46 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query is about a stable AI/ML concept, specifically FastAPI, which is a well-established Python framework for building APIs.",
+              "sources": [
+                "1_-_Intro_What_is_a_Vector_DB.pdf"
+              ],
+              "suggestions": [
+                "Further explain: what is fast api?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782472590743",
+              "role": "user",
+              "text": "what is fast api?",
+              "timestamp": "04:46 PM"
+            },
+            {
+              "id": "amsg-1782472593830",
+              "role": "assistant",
+              "text": "• Definition: The retrieved context does not contain a definition of \"Fast API\".\n• How it works: The retrieved context does not explain how Fast API works.\n• Example: There is no example of Fast API in the context.\n• Key Takeaway: I don't know based on my knowledge base.",
+              "timestamp": "04:46 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query is about a stable AI/ML concept, specifically FastAPI, which is a well-established Python web framework for building APIs.",
+              "sources": [
+                "1_-_Intro_What_is_a_Vector_DB.pdf"
+              ],
+              "suggestions": [
+                "Further explain: what is fast api?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782472612658",
+              "role": "user",
+              "text": "What is a vector database?",
+              "timestamp": "04:46 PM"
+            },
+            {
+              "id": "amsg-1782472615609",
+              "role": "assistant",
+              "text": "• Definition: A vector database (VDBMS) is a type of database that stores and manages vector data, which are dense, opaque representations of complex data such as text, images, or graphs.\n• How it works: \n  * The process involves converting data into an embedding vector using a machine learning model.\n  * The vector is then stored in a specialized database.\n  * When querying the data, the query is embedded as a vector, and the database finds vectors similar to the query vector.\n  * Key technical concepts include:\n    + Embedding vectors using ML models\n    + Storing vectors in a specialized database\n    + Querying data using nearest neighbors and simple filtering\n• Example: No specific example is provided in the context, but the process of converting data into an embedding vector and storing it in a database is illustrated.\n• Key Takeaway: A vector database is a specialized database that stores and manages vector data, enabling efficient querying and retrieval of similar data points.",
+              "timestamp": "04:46 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "1_-_Intro_What_is_a_Vector_DB.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is a vector database?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782472627620",
+              "role": "user",
+              "text": "explain linear regression",
+              "timestamp": "04:47 PM"
+            },
+            {
+              "id": "amsg-1782472630600",
+              "role": "assistant",
+              "text": "• Definition: Linear regression is a statistical method used for predictive analysis, which shows a linear relationship between a dependent variable (y) and one or more independent variables (x).\n• How it works: \n  * The linear regression algorithm finds how the value of the dependent variable is changing according to the value of the independent variable.\n  * It provides a sloped straight line representing the relationship between the variables, which can be explained by the equation: y = a0 + a1x + ε, where Y is the dependent variable, X is the independent variable, and a0 is the intercept of the line.\n  * The relationship between variables can be positive or negative linear.\n• Example: Predicting the salary of an employee based on the year of experience.\n• Key Takeaway: Linear regression is a statistical method that shows a linear relationship between dependent and independent variables, used for predictive analysis, and can be divided into simple and multiple linear regression.",
+              "timestamp": "04:47 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "AI & ML DIGITAL NOTES.pdf"
+              ],
+              "suggestions": [
+                "Further explain: explain linear regression",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782473162801",
+              "role": "user",
+              "text": "what is fast api?",
+              "timestamp": "04:56 PM"
+            },
+            {
+              "id": "amsg-1782473164813",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "04:56 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query is about a stable AI/ML concept, specifically FastAPI, which is a well-established Python web framework for building APIs.",
+              "sources": [
+                "1_-_Intro_What_is_a_Vector_DB.pdf",
+                "DEEP LEARNING ( R20A06610 ).pdf",
+                "2024-wttc-introduction-to-ai.pdf"
+              ],
+              "suggestions": [
+                "Further explain: what is fast api?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782474282875",
+              "role": "user",
+              "text": "explain fast api",
+              "timestamp": "05:14 PM"
+            },
+            {
+              "id": "amsg-1782474285975",
+              "role": "assistant",
+              "text": "• Definition: FastAPI is a modern, high-performance web framework for building APIs with Python 3.7+ based on standard Python type hints.\n• How it works: \n  * It is built on top of Starlette for web handling and Pydantic for data validation.\n  * It supports asynchronous programming natively, allowing developers to build scalable applications.\n  * It relies on Uvicorn and Starlette in its background, making it faster than many other frameworks.\n• Example: None provided in the context.\n• Key Takeaway: FastAPI is a high-performance web framework that supports asynchronous programming, automatic data validation, and interactive API documentation, making it an excellent choice for building modern APIs.",
+              "timestamp": "05:14 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Mastering_FastAPI_with_Python.pdf"
+              ],
+              "suggestions": [
+                "Further explain: explain fast api",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782474328716",
+              "role": "user",
+              "text": "what is mlops?",
+              "timestamp": "05:15 PM"
+            },
+            {
+              "id": "amsg-1782474331805",
+              "role": "assistant",
+              "text": "• Definition: MLOps is the standardization and streamlining of machine learning life cycle management.\n• How it works: \n  * It involves managing the machine learning life cycle, from development to deployment in a production environment.\n  * It provides data scientists with visibility into the performance of deployed models and allows for action, such as selecting winning models from tests and easily deploying them.\n  * It streamlines the process of maintaining models and the entire data pipeline in production.\n• Example: No specific example is provided in the context, but it mentions the importance of MLOps in managing multiple machine learning models and their deployment in a production environment.\n• Key Takeaway: MLOps is a critical component of successful data science project deployment in the enterprise, helping organizations generate long-term value and reduce risk associated with data science, machine learning, and AI initiatives.",
+              "timestamp": "05:15 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: what is mlops?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782474396768",
+              "role": "user",
+              "text": "what is the weather today/",
+              "timestamp": "05:16 PM"
+            },
+            {
+              "id": "amsg-1782474396784",
+              "role": "assistant",
+              "text": "I'm MindMesh, an AI/ML Knowledge Assistant. I specialize in machine learning, artificial intelligence, and programming topics. I can't help with questions outside that scope — but feel free to ask me anything about AI, ML, or your uploaded documents!",
+              "timestamp": "05:16 PM",
+              "route": "UNRELATED",
+              "routingReason": "Heuristic match for unrelated pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: what is the weather today/",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782474409668",
+              "role": "user",
+              "text": "Explain the time complexity of QuickSort",
+              "timestamp": "05:16 PM"
+            },
+            {
+              "id": "amsg-1782474413298",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "05:16 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: Explain the time complexity of",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782474437273",
+              "role": "user",
+              "text": "what is the latest OpenAI model",
+              "timestamp": "05:17 PM"
+            },
+            {
+              "id": "amsg-1782474438599",
+              "role": "assistant",
+              "text": "I couldn't find current information on that. My response is based on a web search for recency, but no relevant results were available. For the latest information on OpenAI models, I recommend checking the official OpenAI website or recent tech news updates.",
+              "timestamp": "05:17 PM",
+              "route": "WEB_SEARCH",
+              "routingReason": "Heuristic match for web search pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: what is the latest OpenAI mode",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782474479003",
+              "role": "user",
+              "text": "what was the last version released of openai model?",
+              "timestamp": "05:17 PM"
+            },
+            {
+              "id": "amsg-1782474479950",
+              "role": "assistant",
+              "text": "I couldn't find current information on that. My response is based on a web search that did not yield any results, so I'm unable to provide the last version released of the OpenAI model.",
+              "timestamp": "05:17 PM",
+              "route": "WEB_SEARCH",
+              "routingReason": "The query contains a time-sensitivity signal ('last version released') related to an AI/ML topic ('openai model'), which requires current information.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: what was the last version rele",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782474705744",
+              "role": "user",
+              "text": "what was the last version released of openai model?",
+              "timestamp": "05:21 PM"
+            },
+            {
+              "id": "amsg-1782474708852",
+              "role": "assistant",
+              "text": "The last version released of the OpenAI model is GPT-5.4, which was announced on March 5, 2026, and brings together recent advances in reasoning, coding, and agentic workflows. This answer is based on a recent web search for recency, using results from OpenAI's help center and release notes.",
+              "timestamp": "05:21 PM",
+              "route": "WEB_SEARCH",
+              "routingReason": "The query contains a time-sensitivity signal ('last version released') related to an AI/ML topic ('openai model'), which requires current information.",
+              "sources": [
+                "GPT-5 - Wikipedia",
+                "Model Release Notes | OpenAI Help Center",
+                "OpenAI Release Notes - June 2026 Latest Updates - Releasebot",
+                "Open models by OpenAI"
+              ],
+              "suggestions": [
+                "Further explain: what was the last version rele",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782474787166",
+              "role": "user",
+              "text": "what is the latest version released by gemini",
+              "timestamp": "05:23 PM"
+            },
+            {
+              "id": "amsg-1782474789222",
+              "role": "assistant",
+              "text": "The latest version released by Gemini is Gemini 3.5, which combines frontier intelligence with action and includes models such as Gemini Spark, a personal AI agent. This answer is based on recent web search results for recency and accuracy, providing the most up-to-date information available.",
+              "timestamp": "05:23 PM",
+              "route": "WEB_SEARCH",
+              "routingReason": "Heuristic match for web search pattern.",
+              "sources": [
+                "Gemini (language model) - Wikipedia",
+                "Gemini 3.5: frontier intelligence with action",
+                "Gemini 2.0: Flash, Flash-Lite and Pro - Google Developers Blog",
+                "Gemini 3.5 — Google DeepMind"
+              ],
+              "suggestions": [
+                "Further explain: what is the latest version rel",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782474993224",
+              "role": "user",
+              "text": "hi, how are you?",
+              "timestamp": "05:26 PM"
+            },
+            {
+              "id": "amsg-1782474993759",
+              "role": "assistant",
+              "text": "Hello. I'm doing great, thanks for asking. I'm here to help with any AI or Machine Learning topics you'd like to explore, so feel free to ask me anything. How can I assist you today?",
+              "timestamp": "05:26 PM",
+              "route": "CASUAL",
+              "routingReason": "Heuristic match for casual pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: hi, how are you?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782475989171",
+              "role": "user",
+              "text": "How does k-means clustering work?",
+              "timestamp": "05:43 PM"
+            },
+            {
+              "id": "amsg-1782475992221",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "05:43 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: How does k-means clustering wo",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782476006324",
+              "role": "user",
+              "text": "What is the difference between concurrency and parallelism?",
+              "timestamp": "05:43 PM"
+            },
+            {
+              "id": "amsg-1782476011082",
+              "role": "assistant",
+              "text": "• Definition: Concurrency and parallelism are two related but distinct concepts in computer science. \n• How it works: \n  • Concurrency refers to the ability of a system to handle multiple tasks simultaneously, sharing the same resources, such as CPU cores or memory. \n  • Parallelism, on the other hand, refers to the ability of a system to execute multiple tasks at the same time, using multiple resources, such as multiple CPU cores. \n  In the context of Gunicorn and Uvicorn, concurrency is achieved through asynchronous workers, while parallelism is achieved by scaling horizontally across multiple CPU cores.\n• Example: The retrieved context does not contain a specific example to illustrate the difference between concurrency and parallelism.\n• Key Takeaway: Concurrency and parallelism are related concepts that enable systems to handle multiple tasks efficiently, with concurrency focusing on shared resources and parallelism focusing on multiple resources.",
+              "timestamp": "05:43 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query is about a stable, well-established AI/ML concept that can be answered from a knowledge base without needing current or recent information.",
+              "sources": [
+                "Mastering_FastAPI_with_Python.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is the difference between",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782476019328",
+              "role": "user",
+              "text": "What is a vector database?",
+              "timestamp": "05:43 PM"
+            },
+            {
+              "id": "amsg-1782476022475",
+              "role": "assistant",
+              "text": "• Definition: A vector database is not explicitly defined in the context, but it can be inferred as a database that stores vectors (lists of fixed size) of characteristics, which are used to represent customer information.\n• How it works: The context mentions that all customer information has to be aggregated into a vector of characteristics, which includes structural information, historical activities, and current context. However, the exact mechanism of a vector database is not explained.\n• Example: None\n• Key Takeaway: Customer information is aggregated into vectors of characteristics, but the context does not provide a clear definition or explanation of a vector database.",
+              "timestamp": "05:43 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is a vector database?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782628579174",
+              "role": "user",
+              "text": "What is fine-tuning",
+              "timestamp": "12:06 PM"
+            },
+            {
+              "id": "amsg-err-1782628579182",
+              "role": "assistant",
+              "text": "⚠️ **Local RAG Backend Offline**: Could not connect to the Python backend running at `http://localhost:8000/chat`.\n      \nPlease ensure your local Python RAG server is running with the following code:\n```python\n# run on http://localhost:8000\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\nclass ChatRequest(BaseModel):\n    question: str\n\n@app.post(\"/chat\")\ndef chat(req: ChatRequest):\n    return {\"response\": f\"Your RAG response to: {req.question}\"}\n```",
+              "timestamp": "12:06 PM"
+            },
+            {
+              "id": "umsg-1782628583295",
+              "role": "user",
+              "text": "Explain the time complexity of QuickSort",
+              "timestamp": "12:06 PM"
+            },
+            {
+              "id": "amsg-err-1782628583300",
+              "role": "assistant",
+              "text": "⚠️ **Local RAG Backend Offline**: Could not connect to the Python backend running at `http://localhost:8000/chat`.\n      \nPlease ensure your local Python RAG server is running with the following code:\n```python\n# run on http://localhost:8000\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\nclass ChatRequest(BaseModel):\n    question: str\n\n@app.post(\"/chat\")\ndef chat(req: ChatRequest):\n    return {\"response\": f\"Your RAG response to: {req.question}\"}\n```",
+              "timestamp": "12:06 PM"
+            },
+            {
+              "id": "umsg-1782628585814",
+              "role": "user",
+              "text": "Explain transformers",
+              "timestamp": "12:06 PM"
+            },
+            {
+              "id": "amsg-err-1782628585818",
+              "role": "assistant",
+              "text": "⚠️ **Local RAG Backend Offline**: Could not connect to the Python backend running at `http://localhost:8000/chat`.\n      \nPlease ensure your local Python RAG server is running with the following code:\n```python\n# run on http://localhost:8000\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\nclass ChatRequest(BaseModel):\n    question: str\n\n@app.post(\"/chat\")\ndef chat(req: ChatRequest):\n    return {\"response\": f\"Your RAG response to: {req.question}\"}\n```",
+              "timestamp": "12:06 PM"
+            },
+            {
+              "id": "umsg-1782628920386",
+              "role": "user",
+              "text": "Explain transformers",
+              "timestamp": "12:12 PM"
+            },
+            {
+              "id": "amsg-1782628924006",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "12:12 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: Explain transformers",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782628928695",
+              "role": "user",
+              "text": "Explain the time complexity of QuickSort",
+              "timestamp": "12:12 PM"
+            },
+            {
+              "id": "amsg-1782628931954",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "12:12 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: Explain the time complexity of",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782628935147",
+              "role": "user",
+              "text": "Explain the time complexity of QuickSort",
+              "timestamp": "12:12 PM"
+            },
+            {
+              "id": "amsg-1782628938067",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "12:12 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: Explain the time complexity of",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782628942384",
+              "role": "user",
+              "text": "What is vector database?",
+              "timestamp": "12:12 PM"
+            },
+            {
+              "id": "amsg-1782628946000",
+              "role": "assistant",
+              "text": "• Definition: A vector database is not explicitly defined in the context, but it can be inferred as a database that stores customer information in the form of vectors (a list of fixed size) of characteristics.\n• How it works: The context mentions that all customer information has to be aggregated into a vector of characteristics, which includes structural information, historical activities, and current context.\n• Example: No explicit example of a vector database is provided in the context.\n• Key Takeaway: Customer information is aggregated into a vector of characteristics, which can include various data points such as age, gender, location, and historical activities.",
+              "timestamp": "12:12 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is vector database?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782628951390",
+              "role": "user",
+              "text": "What is the difference between concurrency and parallelism?",
+              "timestamp": "12:12 PM"
+            },
+            {
+              "id": "amsg-1782628954920",
+              "role": "assistant",
+              "text": "• Definition: Concurrency and parallelism are two related but distinct concepts in computer science. \n• How it works: \n  • Concurrency refers to the ability of a system to handle multiple tasks simultaneously, sharing the same resources, such as CPU cores or memory. \n  • Parallelism, on the other hand, refers to the ability of a system to execute multiple tasks at the same time, using multiple resources, such as multiple CPU cores.\n  • In the context of Gunicorn and Uvicorn, concurrency is achieved through asynchronous workers, while parallelism is achieved by scaling horizontally across multiple CPU cores.\n• Example: The retrieved context does not provide a specific example to illustrate the difference between concurrency and parallelism.\n• Key Takeaway: Concurrency and parallelism are related concepts that enable systems to handle multiple tasks efficiently, but they differ in their approach to resource utilization and task execution.",
+              "timestamp": "12:12 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query is about a stable, well-established AI/ML concept that can be answered from a knowledge base without needing current or recent information.",
+              "sources": [
+                "Mastering_FastAPI_with_Python.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is the difference between",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782628960374",
+              "role": "user",
+              "text": "Explain attention mechanism",
+              "timestamp": "12:12 PM"
+            },
+            {
+              "id": "amsg-1782628963247",
+              "role": "assistant",
+              "text": "• Definition: The attention mechanism is not explicitly defined in the provided context, but it can be related to the concept of focusing on specific parts of the input data.\n• How it works: The context does not provide a clear explanation of how the attention mechanism works.\n• Example: There is no example of the attention mechanism in the provided context.\n• Key Takeaway: The attention mechanism is not discussed in the provided context, but it is a concept in deep learning that allows models to focus on specific parts of the input data.\n\nNote: The provided context does not contain enough information to explain the attention mechanism. If you're looking for information on this topic, you might want to consider other resources. \n\nHowever, as per the critical rules, the correct response should be: \n\nI don't know based on my knowledge base.",
+              "timestamp": "12:12 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: Explain attention mechanism",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782628972354",
+              "role": "user",
+              "text": "hi, how are you?",
+              "timestamp": "12:12 PM"
+            },
+            {
+              "id": "amsg-1782628972700",
+              "role": "assistant",
+              "text": "Hello. I'm doing great, thanks for asking. I'm here to help with any AI or Machine Learning topics you'd like to explore, so feel free to ask me anything. How can I assist you today?",
+              "timestamp": "12:12 PM",
+              "route": "CASUAL",
+              "routingReason": "Heuristic match for casual pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: hi, how are you?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782628993252",
+              "role": "user",
+              "text": "good morning mindmesh",
+              "timestamp": "12:13 PM"
+            },
+            {
+              "id": "amsg-1782628993524",
+              "role": "assistant",
+              "text": "Good morning. Hope you're having a great start to the day. I'm here and ready to help with any AI or Machine Learning topics you'd like to explore. What's on your mind today?",
+              "timestamp": "12:13 PM",
+              "route": "CASUAL",
+              "routingReason": "Heuristic match for casual pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: good morning mindmesh",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782629007729",
+              "role": "user",
+              "text": "how is the weather today in bangalore?",
+              "timestamp": "12:13 PM"
+            },
+            {
+              "id": "amsg-1782629007734",
+              "role": "assistant",
+              "text": "I'm MindMesh, an AI/ML Knowledge Assistant. I specialize in machine learning, artificial intelligence, and programming topics. I can't help with questions outside that scope — but feel free to ask me anything about AI, ML, or your uploaded documents!",
+              "timestamp": "12:13 PM",
+              "route": "UNRELATED",
+              "routingReason": "Heuristic match for unrelated pattern.",
+              "sources": [],
+              "suggestions": [
+                "Further explain: how is the weather today in ba",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782629035506",
+              "role": "user",
+              "text": "Difference between LoRA and QLoRA",
+              "timestamp": "12:13 PM"
+            },
+            {
+              "id": "amsg-1782629038644",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "12:13 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query asks about the difference between two established AI/ML concepts, LoRA and QLoRA, without any time-sensitivity signals.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: Difference between LoRA and QL",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782629078759",
+              "role": "user",
+              "text": "what is the difference between lora and qlora",
+              "timestamp": "12:14 PM"
+            },
+            {
+              "id": "amsg-1782629081523",
+              "role": "assistant",
+              "text": "• Definition: QLoRA (Quantized pre-train LLM + LoRA) is an extension of LoRA, incorporating quantization techniques to reduce memory requirements while preserving performance.\n• How it works: \n  • QLoRA uses 4-bit Normal Float (NF4) and Double Quantization to reduce memory usage\n  • It employs a Page Optimizer and uses Bfloat16 as the computational data type\n  • QLoRA combines LoRA with quantization, allowing for more efficient fine-tuning of large models\n• Example: QLoRA for a single linear layer in a quantized model with a single LoRA adapter uses NF4 for weights (W) and FP8 for the adapter (c2), with specific block sizes for each.\n• Key Takeaway: QLoRA differs from LoRA by incorporating quantization techniques, such as 4-bit Normal Float and Double Quantization, to reduce memory requirements while maintaining performance.",
+              "timestamp": "12:14 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Group2-Presentation-cf8028bc58193a5e6e6d7b05709ef1a9.pdf"
+              ],
+              "suggestions": [
+                "Further explain: what is the difference between",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782629159041",
+              "role": "user",
+              "text": "Explain linear regression vs logistic regression",
+              "timestamp": "12:15 PM"
+            },
+            {
+              "id": "amsg-1782629162522",
+              "role": "assistant",
+              "text": "• Definition: Linear regression and logistic regression are both supervised learning algorithms used in machine learning. Linear regression is used for predicting continuous outcomes, while logistic regression is used for predicting binary outcomes.\n• How it works: \n  * Linear regression models the relationship between a dependent variable and one or more independent variables using a linear equation.\n  * Logistic regression models the probability of a binary outcome based on one or more independent variables using a logistic function (also known as a sigmoid function).\n• Example: No specific example is provided in the context, but both algorithms are mentioned in Table 4-2 as having a tendency for overfitting.\n• Key Takeaway: Linear regression and logistic regression are both used for prediction, but they differ in the type of outcome they predict, with linear regression predicting continuous outcomes and logistic regression predicting binary outcomes.",
+              "timestamp": "12:16 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: Explain linear regression vs l",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782629921385",
+              "role": "user",
+              "text": "What is the difference between concurrency and parallelism?",
+              "timestamp": "12:28 PM"
+            },
+            {
+              "id": "amsg-1782629925198",
+              "role": "assistant",
+              "text": "• Definition: The retrieved context does not explicitly define concurrency and parallelism, but it mentions them in the context of Gunicorn and Uvicorn.\n• How it works: \n  • Concurrency is hinted at in the context of asynchronous workers like Uvicorn, which can handle multiple tasks simultaneously.\n  • Parallelism is mentioned in the context of splitting datasets (partitioning or sharding) and scoring the partitions independently, as well as using parallel processing runtimes like Apache Spark.\n• Example: No explicit example is provided in the context, but it can be inferred that using Gunicorn with multiple workers and Uvicorn with asynchronous workers can demonstrate both concurrency and parallelism.\n• Key Takeaway: The context suggests that concurrency and parallelism are related concepts that can be used to improve the performance and scalability of systems, but it does not provide a clear distinction between the two.",
+              "timestamp": "12:28 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query is about a stable, well-established AI/ML concept, specifically concurrency and parallelism, which can be answered from a knowledge base without needing current or recent information.",
+              "sources": [
+                "Mastering_FastAPI_with_Python.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is the difference between",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782630147438",
+              "role": "user",
+              "text": "Further explain: What is the difference between",
+              "timestamp": "12:32 PM"
+            },
+            {
+              "id": "amsg-1782630155008",
+              "role": "assistant",
+              "text": "| Feature | Univariate Statistical Tests | \n|---------|-----------------------------|\n| Definition | A method for detecting drift by applying statistical tests on data from the source and target distributions |\n| Use Case | Detecting drift in continuous and categorical features |\n| Advantages | Helps detect drift as quickly as possible |\n| Limitations | Detects an effect, but does not quantify the level of drift |\n\n| Feature | Kolmogorov-Smirnov Test | Chi-squared Test |\n|---------|------------------------|-----------------|\n| Definition | Nonparametric hypothesis test for continuous features | Practical choice for categorical features |\n| Use Case | Checks if two samples come from the same distribution | Checks if observed frequencies match expected frequencies |\n| Advantages | Measures distance between empirical distribution functions |  |\n| Limitations |  | Assumes expected frequencies are known | \n\nNote: The question seems to be incomplete, but based on the provided context, the difference between univariate statistical tests, specifically Kolmogorov-Smirnov test and Chi-squared test, is explained. If the complete question is provided, a more accurate answer can be given.",
+              "timestamp": "12:32 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: Further explain: What is the d",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782631160675",
+              "role": "user",
+              "text": "Difference between CNN and RNN",
+              "timestamp": "12:49 PM"
+            },
+            {
+              "id": "amsg-1782631165079",
+              "role": "assistant",
+              "text": "| Feature | CNN | RNN |\n|---------|--------|--------|\n| Definition | Convolutional Neural Network | Recurrent Neural Network |\n| Use Case | Image classification, object detection | Sequential data such as text, speech, or time series |\n| Advantages | Ability to capture spatial hierarchies, robust to small transformations | Ability to capture temporal relationships, suitable for sequential data |\n| Limitations | Not suitable for sequential data, computationally expensive | Can suffer from vanishing gradients, difficult to train |\n\nNote: The provided context does not contain detailed information about CNN and RNN. The above table provides a general overview of the differences between CNN and RNN. For a more detailed explanation, additional context or information would be required.",
+              "timestamp": "12:49 PM",
+              "route": "VECTOR_DB",
+              "routingReason": "The query asks about the difference between two well-established AI/ML concepts, CNN and RNN, which can be answered from a stable knowledge base.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf",
+                "Group2-Presentation-cf8028bc58193a5e6e6d7b05709ef1a9.pdf"
+              ],
+              "suggestions": [
+                "Further explain: Difference between CNN and RNN",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782707779776",
+              "role": "user",
+              "text": "Explain attention mechanism",
+              "timestamp": "10:06 AM"
+            },
+            {
+              "id": "amsg-1782707783023",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base.",
+              "timestamp": "10:06 AM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: Explain attention mechanism",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782707787776",
+              "role": "user",
+              "text": "How do embeddings work?",
+              "timestamp": "10:06 AM"
+            },
+            {
+              "id": "amsg-1782707791083",
+              "role": "assistant",
+              "text": "• Definition: Embeddings are tables of numbers that are usable by ML algorithms, created by transforming images and text into a format that can be used by machine learning models.\n• How it works: Deep learning models transform images and text into embeddings, which allow data scientists to perform transfer learning because they can be used in domains on which they were not trained.\n• Example: No specific example is provided in the context, but it is mentioned that embeddings are used to transform images and text into tables of numbers.\n• Key Takeaway: Embeddings enable transfer learning by transforming images and text into a usable format for machine learning algorithms, allowing models to be applied to new domains.",
+              "timestamp": "10:06 AM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: How do embeddings work?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782707820334",
+              "role": "user",
+              "text": "What is vector database?",
+              "timestamp": "10:07 AM"
+            },
+            {
+              "id": "amsg-1782707824337",
+              "role": "assistant",
+              "text": "• Definition: A vector database is not explicitly defined in the context, but it can be inferred as a database that stores vectors (lists of fixed size) of characteristics.\n• How it works: The context mentions that customer information has to be aggregated into a vector of characteristics, which can include structural information, historical activities, and current context.\n• Example: The context provides an example of extracting characteristics from historical activities, such as amount of purchases, number of views, and increase in spending or views.\n• Key Takeaway: A vector database is likely a database that stores and manages these vectors of characteristics, but the context does not provide a clear definition or explanation of how it works. \n\nNote: The context does not provide enough information to answer confidently about vector databases.",
+              "timestamp": "10:07 AM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is vector database?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782707830608",
+              "role": "user",
+              "text": "What is RAG?",
+              "timestamp": "10:07 AM"
+            },
+            {
+              "id": "amsg-1782707835011",
+              "role": "assistant",
+              "text": "• Definition: RAG stands for Retrieval-Augmented Generation, but the provided context does not explicitly define or explain RAG.\n• How it works: The context does not describe the mechanism or steps of RAG.\n• Example: There is no concrete illustration of RAG in the provided context.\n• Key Takeaway: The context does not provide enough information to confidently describe or explain RAG. \n\nGiven the lack of information about RAG in the context, the most accurate response is:\n\nI don't know based on my knowledge base.",
+              "timestamp": "10:07 AM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "Mastering_FastAPI_with_Python.pdf",
+                "Comment-mettre-à-l’échelle-le-Machine-Learning-en-entreprise.pdf"
+              ],
+              "suggestions": [
+                "Further explain: What is RAG?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782707845111",
+              "role": "user",
+              "text": "what is attention mechanism?",
+              "timestamp": "10:07 AM"
+            },
+            {
+              "id": "amsg-1782707848722",
+              "role": "assistant",
+              "text": "• Definition: An attention mechanism is a technique used in sequence modeling and transduction models to allow the model to focus on specific parts of the input or output sequences when computing representations.\n• How it works: \n  * It relates different positions of a single sequence to compute a representation of the sequence.\n  * It uses queries, keys, and values to compute attention weights, which are then used to compute a weighted sum of the values.\n  * The Transformer model uses multi-head attention, which applies multiple attention mechanisms in parallel.\n• Example: In \"encoder-decoder attention\" layers, the queries come from the previous decoder layer, and the memory keys and values come from the output of the encoder, allowing every position in the decoder to attend over all positions in the input sequence.\n• Key Takeaway: Attention mechanisms enable models to draw global dependencies between input and output sequences, allowing for more parallelization and improved performance in tasks such as machine translation.",
+              "timestamp": "10:07 AM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "NIPS-2017-attention-is-all-you-need-Paper.pdf"
+              ],
+              "suggestions": [
+                "Further explain: what is attention mechanism?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782707869427",
+              "role": "user",
+              "text": "Explain transformer architecture",
+              "timestamp": "10:07 AM"
+            },
+            {
+              "id": "amsg-1782707874248",
+              "role": "assistant",
+              "text": "• Definition: The Transformer is a model architecture that relies entirely on an attention mechanism to draw global dependencies between input and output, dispensing with recurrence and convolutions entirely.\n• How it works: \n  * The Transformer consists of an encoder and a decoder, both composed of a stack of identical layers.\n  * Each layer in the encoder and decoder has two sub-layers: self-attention and a fully connected feed-forward network.\n  * The decoder has an additional sub-layer that performs multi-head attention over the output of the encoder stack.\n  * Residual connections and layer normalization are used around each sub-layer.\n• Example: The Transformer model architecture is shown in Figure 1, which illustrates the encoder and decoder stacks with their respective sub-layers.\n• Key Takeaway: The Transformer architecture allows for significantly more parallelization and can reach a new state of the art in translation quality after being trained for a short period of time.",
+              "timestamp": "10:07 AM",
+              "route": "VECTOR_DB",
+              "routingReason": "Heuristic match for vector db pattern.",
+              "sources": [
+                "NIPS-2017-attention-is-all-you-need-Paper.pdf"
+              ],
+              "suggestions": [
+                "Further explain: Explain transformer architectu",
+                "Show a python code example"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "session-1782386177756",
+          "title": "What is RAG?",
+          "createdAt": "2026-06-25T11:16:17.756Z",
+          "messages": [
+            {
+              "id": "init-m-1782386177756",
+              "role": "assistant",
+              "text": "Hello! What are we talking about today?",
+              "timestamp": "04:46 PM",
+              "suggestions": [
+                "What is dynamic programming?",
+                "Explain SQL joins with examples"
+              ]
+            },
+            {
+              "id": "umsg-1782386180759",
+              "role": "user",
+              "text": "What is RAG?",
+              "timestamp": "04:46 PM"
+            },
+            {
+              "id": "amsg-1782386182088",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base. The retrieved context does not provide information about RAG (Retrieval-Augmented Generation). It only mentions a greeting and a statement about machine learning. If you're looking for information on RAG, I'd be happy to try and help with a more general explanation, but it would not be based on the provided context.",
+              "timestamp": "04:46 PM",
+              "suggestions": [
+                "Further explain: What is RAG?",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782467981884",
+              "role": "user",
+              "text": "Explain attention mechanism",
+              "timestamp": "03:29 PM"
+            },
+            {
+              "id": "amsg-err-1782467981927",
+              "role": "assistant",
+              "text": "⚠️ **Local RAG Backend Offline**: Could not connect to the Python backend running at `http://localhost:8000/chat`.\n      \nPlease ensure your local Python RAG server is running with the following code:\n```python\n# run on http://localhost:8000\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\nclass ChatRequest(BaseModel):\n    question: str\n\n@app.post(\"/chat\")\ndef chat(req: ChatRequest):\n    return {\"response\": f\"Your RAG response to: {req.question}\"}\n```",
+              "timestamp": "03:29 PM"
+            },
+            {
+              "id": "umsg-1782468167941",
+              "role": "user",
+              "text": "Explain the time complexity of QuickSort",
+              "timestamp": "03:32 PM"
+            },
+            {
+              "id": "amsg-1782468169942",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base. The retrieved context does not mention QuickSort or time complexity, it only mentions \"Hello world from test document\" and \"Machine learning is fun.\"",
+              "timestamp": "03:32 PM",
+              "suggestions": [
+                "Further explain: Explain the tim",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782468175066",
+              "role": "user",
+              "text": "What is fine-tuning",
+              "timestamp": "03:32 PM"
+            },
+            {
+              "id": "amsg-1782468176275",
+              "role": "assistant",
+              "text": "I don't know based on my knowledge base. \n\nThe retrieved context does not provide information about fine-tuning. If you're interested in learning about fine-tuning in machine learning, I can tell you that it's a concept related to adjusting pre-trained models to fit specific tasks, but since it's not in the provided context, I'd rather not provide incomplete information.",
+              "timestamp": "03:32 PM",
+              "suggestions": [
+                "Further explain: What is fine-tu",
+                "Show a python code example"
+              ]
+            },
+            {
+              "id": "umsg-1782469619274",
+              "role": "user",
+              "text": "Explain transformers",
+              "timestamp": "03:56 PM"
+            },
+            {
+              "id": "amsg-err-1782469619303",
+              "role": "assistant",
+              "text": "⚠️ **Local RAG Backend Offline**: Could not connect to the Python backend running at `http://localhost:8000/chat`.\n      \nPlease ensure your local Python RAG server is running with the following code:\n```python\n# run on http://localhost:8000\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\n\napp = FastAPI()\n\nclass ChatRequest(BaseModel):\n    question: str\n\n@app.post(\"/chat\")\ndef chat(req: ChatRequest):\n    return {\"response\": f\"Your RAG response to: {req.question}\"}\n```",
+              "timestamp": "03:56 PM"
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "activeLlm": "local",
+        "activeConnections": [
+          "1782472564840",
+          "1782472579556",
+          "1782474321378",
+          "1782629066920",
+          "1782707816772"
+        ],
+        "fontSize": "medium",
+        "removeResearchMode": false
+      }
+    }
+  }
+}

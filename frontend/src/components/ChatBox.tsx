@@ -41,6 +41,7 @@ export default function ChatBox({
   const prevMessagesLengthRef = useRef<number>(0);
   const prevLoadingRef = useRef<boolean>(isLoading);
   const userSentMessageRef = useRef<boolean>(false);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // Rotating general non-transformer recommendations
   useEffect(() => {
@@ -159,31 +160,15 @@ export default function ChatBox({
     lastScrollTopRef.current = scrollTop;
   };
 
-  // Scroll to bottom helper
-  const scrollToBottom = (instant = false) => {
-    const container = scrollContainerRef.current;
-    if (container) {
-      container.scrollTo({
-        top: container.scrollHeight,
-        behavior: instant ? 'auto' : 'smooth'
+  // Smooth scroll to messagesEndRef
+  useEffect(() => {
+    if (messages.length > 0) {
+      messagesEndRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "end"
       });
     }
-  };
-
-  useEffect(() => {
-    const messagesAdded = messages.length > prevMessagesLengthRef.current;
-    const loadingCompleted = prevLoadingRef.current && !isLoading;
-
-    if (messagesAdded || loadingCompleted) {
-      if (shouldAutoScrollRef.current || userSentMessageRef.current) {
-        scrollToBottom();
-      }
-    }
-
-    userSentMessageRef.current = false;
-    prevMessagesLengthRef.current = messages.length;
-    prevLoadingRef.current = isLoading;
-  }, [messages.length, isLoading]);
+  }, [messages.length]);
 
   const handleSuggestionClick = (text: string) => {
     setInputText(text);
@@ -261,6 +246,7 @@ export default function ChatBox({
             </div>
           </div>
         )}
+        <div ref={messagesEndRef} />
       </div>
 
       {/* Floating Scroll to Bottom button */}

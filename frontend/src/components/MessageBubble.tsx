@@ -4,6 +4,8 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { tomorrow } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Message } from '../types';
 import { Copy, Check, Terminal, Bot, User } from 'lucide-react';
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface MessageBubbleProps {
   message: Message;
@@ -156,10 +158,25 @@ export default function MessageBubble({ message, onClickSuggestion, fontSize }: 
               }
 
               // Split lines for formatting
+              // Markdown + Table rendering
               return (
-                <p key={i} className="whitespace-pre-line text-slate-200">
-                  {seg.content}
-                </p>
+                <div
+                  key={i}
+                  className="text-slate-200 max-w-none overflow-x-auto
+                  [&_table]:w-full
+                  [&_table]:border-collapse
+                  [&_th]:border
+                [&_th]:border-zinc-700
+                [&_th]:bg-slate-800
+                  [&_th]:p-2
+                  [&_td]:border
+                [&_td]:border-zinc-700
+                  [&_td]:p-2"
+                >
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {seg.content}
+                  </ReactMarkdown>
+                  </div>
               );
             })}
           </div>
