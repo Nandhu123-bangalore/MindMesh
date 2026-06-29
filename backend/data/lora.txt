@@ -1,0 +1,1 @@
+Low-rank adaptation (LoRA) is a technique used to adapt machine learning models to new contexts. It can adapt large models to specific uses by adding lightweight pieces to the original model rather than changing the entire model. A data scientist can quickly expand the ways that a model can be used rather than requiring them to build an entirely new model.

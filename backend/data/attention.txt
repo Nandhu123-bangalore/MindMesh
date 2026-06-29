@@ -1,0 +1,8 @@
+Attention mechanism helps neural networks focus on relevant parts of input while processing data.
+
+Self-attention allows every token to compare itself with all other tokens in a sequence.
+
+Queries, Keys, and Values are used in self-attention:
+- Query: what this token is looking for
+- Key: what this token contains
+- Value: actual information carried by token

@@ -1,0 +1,5 @@
+Retrieval-Augmented Generation combines retrieval and generation.
+
+First, relevant documents are retrieved from a knowledge base.
+Then, retrieved context is given to LLM.
+Finally, LLM generates grounded response.
